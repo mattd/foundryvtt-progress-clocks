@@ -140,24 +140,18 @@ export class ClockSheet extends ActorSheet {
 
         // Update the tokens
         for (const token of tokens) {
+            const tokenData = {
+                name: actor.name,
+                img: (
+                    `/${Clock.themes[clock.theme]}` +
+                    `/${clock.size}clock_${clock.progress}.png`
+                ),
+                actorLink: true
+            };
             if (foundryVersion.major >= 8) {
-                await token.document.update({
-                    name: actor.name,
-                    img: (
-                        `/${Clock.themes[clock.theme]}` +
-                        `/${clock.size}clock_${clock.progress}.png`
-                    ),
-                    actorLink: true
-                });
+                await token.document.update(tokenData);
             } else {
-                await token.update({
-                    name: actor.name,
-                    img: (
-                        `/${Clock.themes[clock.theme]}` +
-                        `/${clock.size}clock_${clock.progress}.png`
-                    ),
-                    actorLink: true
-                });
+                await token.update(tokenData);
             };
         }
 

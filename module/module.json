@@ -5,8 +5,8 @@
     "author": "troygoode, Argonius-Angelus, mattd",
     "url": "https://github.com/mattd/foundryvtt-progress-clocks",
     "manifest": "https://raw.githubusercontent.com/mattd/foundryvtt-progress-clocks/main/module/module.json",
-    "download": "https://github.com/mattd/foundryvtt-progress-clocks/releases/download/v1.5.3/build.zip",
-    "version": "1.5.3",
+    "download": "https://github.com/mattd/foundryvtt-progress-clocks/releases/download/v1.5.4/build.zip",
+    "version": "1.5.4",
     "minimumCoreVersion": "0.7.0",
     "compatibleCoreVersion": "10",
     "compatibility": {

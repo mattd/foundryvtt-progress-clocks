@@ -33,16 +33,6 @@ export class Clock {
         this.theme = theme || 'wallflower_green';
     }
 
-    get flags () {
-        return {
-            clocks: {
-                size: this.size,
-                progress: this.progress,
-                theme: this.theme
-            }
-        };
-    }
-
     increment () {
         const old = this;
         return new Clock({
