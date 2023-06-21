@@ -1,6 +1,6 @@
 {
     "name": "foundryvtt-progress-clocks",
-    "version": "1.6.0",
+    "version": "1.6.1",
     "description": "Brings Forged in the Dark style progress clocks to your FoundryVTT games.",
     "main": "module/scripts/init.mjs",
     "scripts": {
